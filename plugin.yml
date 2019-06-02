@@ -1,0 +1,18 @@
+name: HeadRewards
+main: com.vaincecraft.headrewards.main.Main
+version: 1.7
+authors: [LuigiPro14, nato3623]
+description: Right-Click on a particular PlayerHead to recive a custom reward! 1.8-1.13.2 (NO 1.9)
+commands:
+    headrewards:
+     description: hr
+     aliases: [hr]
+    particles:
+     description: pr
+     aliases: [pr]
+    headreload:
+     description: hrl
+     aliases: [hrl]
+    headrewardsgui:
+     description: hrg
+     aliases: [hrg]
