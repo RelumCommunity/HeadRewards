@@ -14,6 +14,11 @@ import com.vaincecraft.headrewards.gui.halloween;
 import com.vaincecraft.headrewards.gui.halloween2;
 import com.vaincecraft.headrewards.gui.halloween3;
 import com.vaincecraft.headrewards.gui.headmain;
+import com.vaincecraft.headrewards.gui.mobegg;
+import com.vaincecraft.headrewards.gui.mobegg2;
+import com.vaincecraft.headrewards.gui.mobegg3;
+import com.vaincecraft.headrewards.gui.mobegg4;
+import com.vaincecraft.headrewards.gui.mobegg5;
 import com.vaincecraft.headrewards.gui.summer;
 import com.vaincecraft.headrewards.gui.summer2;
 import com.vaincecraft.headrewards.main.Main;
@@ -39,6 +44,12 @@ public class GUIEvent implements Listener{
 		String christmas1 =  Main.getLangFile().getString("Gui.christmas_page_1");
 		String christmas2 =  Main.getLangFile().getString("Gui.christmas_page_2");
 		String christmas3 =  Main.getLangFile().getString("Gui.christmas_page_3");
+		//MobEgg
+		String mobegg1 = Main.getLangFile().getString("Gui.mobegg_page_1");
+		String mobegg2 = Main.getLangFile().getString("Gui.mobegg_page_2");
+		String mobegg3 = Main.getLangFile().getString("Gui.mobegg_page_3");
+		String mobegg4 = Main.getLangFile().getString("Gui.mobegg_page_4");
+		String mobegg5 = Main.getLangFile().getString("Gui.mobegg_page_5");
 		
 		if (ic.getCurrentItem() == null) {
 			return;
@@ -67,6 +78,11 @@ public class GUIEvent implements Listener{
 				christmas gui = new christmas(p);
 				gui.open();
 				
+			}
+			else if(ic.getCurrentItem().equals(Command.gethead("testaguimobegg"))) {
+				Player p = (Player) ic.getWhoClicked();
+				mobegg gui = new mobegg(p);
+				gui.open();
 			}
 			
 			ic.setCancelled(true);
@@ -346,6 +362,149 @@ public class GUIEvent implements Listener{
 			
 			ic.setCancelled(true);
 		}
+		
+		//MobEgg
+		else if (ic.getClickedInventory().getTitle().equals(mobegg1)) {
+			
+			int conto = 0;
+			
+			while(true) {
+				conto++;
+				
+				if (ic.getCurrentItem().equals(Command.gethead("mobegg" + conto))) {
+					ic.getWhoClicked().getInventory().addItem(Command.gethead("mobegg" + conto));
+					break;
+				}
+				
+				if (conto == 14) {
+					break;
+				}
+			}
+			if (ic.getCurrentItem().equals(Command.gethead("testaguiback"))) {
+				Player p = (Player) ic.getWhoClicked();
+				headmain gui = new headmain(p);
+				gui.open();
+			}
+			else if (ic.getCurrentItem().equals(Command.gethead("testaguiright"))) {
+				Player p = (Player) ic.getWhoClicked();
+				mobegg2 gui = new mobegg2(p);
+				gui.open();
+			}
+			
+			ic.setCancelled(true);
+		}
+		else if (ic.getClickedInventory().getTitle().equals(mobegg2)) {
+
+			int conto = 14;
+			
+			while(true) {
+				conto++;
+				
+				if (ic.getCurrentItem().equals(Command.gethead("mobegg" + conto))) {
+					ic.getWhoClicked().getInventory().addItem(Command.gethead("mobegg" + conto));
+					break;
+				}
+				
+				if (conto == 28) {
+					break;
+				}
+			}
+			if (ic.getCurrentItem().equals(Command.gethead("testaguileft"))) {
+				Player p = (Player) ic.getWhoClicked();
+				mobegg gui = new mobegg(p);
+				gui.open();
+			}
+			else if (ic.getCurrentItem().equals(Command.gethead("testaguiright"))) {
+				Player p = (Player) ic.getWhoClicked();
+				mobegg3 gui = new mobegg3(p);
+				gui.open();
+			}
+			
+			ic.setCancelled(true);
+		}
+		else if (ic.getClickedInventory().getTitle().equals(mobegg3)) {
+
+			int conto = 28;
+			
+			while(true) {
+				conto++;
+				
+				if (ic.getCurrentItem().equals(Command.gethead("mobegg" + conto))) {
+					ic.getWhoClicked().getInventory().addItem(Command.gethead("mobegg" + conto));
+					break;
+				}
+				
+				if (conto == 42) {
+					break;
+				}
+			}
+			if (ic.getCurrentItem().equals(Command.gethead("testaguileft"))) {
+				Player p = (Player) ic.getWhoClicked();
+				mobegg2 gui = new mobegg2(p);
+				gui.open();
+			}
+			else if (ic.getCurrentItem().equals(Command.gethead("testaguiright"))) {
+				Player p = (Player) ic.getWhoClicked();
+				mobegg4 gui = new mobegg4(p);
+				gui.open();
+			}
+			
+			ic.setCancelled(true);
+		}
+		else if (ic.getClickedInventory().getTitle().equals(mobegg4)) {
+
+			int conto = 42;
+			
+			while(true) {
+				conto++;
+				
+				if (ic.getCurrentItem().equals(Command.gethead("mobegg" + conto))) {
+					ic.getWhoClicked().getInventory().addItem(Command.gethead("mobegg" + conto));
+					break;
+				}
+				
+				if (conto == 56) {
+					break;
+				}
+			}
+			if (ic.getCurrentItem().equals(Command.gethead("testaguileft"))) {
+				Player p = (Player) ic.getWhoClicked();
+				mobegg3 gui = new mobegg3(p);
+				gui.open();
+			}
+			else if (ic.getCurrentItem().equals(Command.gethead("testaguiright"))) {
+				Player p = (Player) ic.getWhoClicked();
+				mobegg5 gui = new mobegg5(p);
+				gui.open();
+			}
+			
+			ic.setCancelled(true);
+		}
+		else if (ic.getClickedInventory().getTitle().equals(mobegg5)) {
+
+			int conto = 56;
+			
+			while(true) {
+				conto++;
+				
+				if (ic.getCurrentItem().equals(Command.gethead("mobegg" + conto))) {
+					ic.getWhoClicked().getInventory().addItem(Command.gethead("mobegg" + conto));
+					break;
+				}
+				
+				if (conto == 57) {
+					break;
+				}
+			}
+			if (ic.getCurrentItem().equals(Command.gethead("testaguileft"))) {
+				Player p = (Player) ic.getWhoClicked();
+				mobegg4 gui = new mobegg4(p);
+				gui.open();
+			}
+			
+			ic.setCancelled(true);
+		}
+		
 		
 	}
 
