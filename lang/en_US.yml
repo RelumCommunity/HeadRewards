@@ -7,11 +7,13 @@ Messages:
   - '&b/hr head summer - From 1 to 27'
   - '&b/hr head halloween - From 1 to 34'
   - '&b/hr head christmas - From 1 to 41'
+  - '&b/hr head mobegg - From 1 to 57'
   - '&b/hrg - Open GUI'
   - '&b/hrg easter - Open easter GUI'
   - '&b/hrg summer - Open summer GUI'
   - '&b/hrg halloween - Open halloween GUI'
   - '&b/hrg christmas - Open christmas GUI'
+  - '&b/hrg mobegg - Open mobegg GUI'
   - '&b/hrl - Reload plugin'
   - '&b/pr - Set particles on (No needed)'
   - '&7------------------------------------'
@@ -31,6 +33,8 @@ Messages:
   Place_Halloween: '&7[HeadRewards] &aHead placed!'
   #Message that player will recieve if they place a christmas head!
   Place_Christmas: '&7[HeadRewards] &aHead placed!'
+  #Message that player will recieve if they place a mobegg head!
+  Place_MobEgg: '&7[HeadRewards] &aHead placed!'
   #Message that player will recieve if they reload the plugin!
   Plugin_Reload: '&7[HeadRewards] &cHeadRewards Reloaded!'
   #Message that player will recieve if they don't have proper permissions!
@@ -53,6 +57,11 @@ Gui:
   christmas_page_1: 'Christmas Heads 1'
   christmas_page_2: 'Christmas Heads 2'
   christmas_page_3: 'Christmas Heads 3'
+  mobegg_page_1: 'MobEgg Heads 1'
+  mobegg_page_2: 'MobEgg Heads 2'
+  mobegg_page_3: 'MobEgg Heads 3'
+  mobegg_page_4: 'MobEgg Heads 4'
+  mobegg_page_5: 'MobEgg Heads 5'
   #Modify gui heads things
   Heads:
     #Navigation heads
@@ -70,6 +79,8 @@ Gui:
     halloween_lore: '&5Halloween Heads'
     christmas_name: '&cCHRISTMAS'
     christmas_lore: '&5Christmas Heads'
+    mobegg_name: '&cMOBEGG'
+    mobegg_lore: '&5MobEgg Heads'
     #Heads names/lores
     #Easter
     easter_head_name: '&cEASTER'
@@ -83,4 +94,6 @@ Gui:
     #Christmas
     christmas_head_name: '&cCHRISTMAS'
     christmas_head_lore: '&5Christmas'
-  
+    #MobEgg
+    mobegg_head_name: '&cMOBEGG'
+    mobegg_head_lore: '&5MobEgg'
