@@ -50,7 +50,7 @@ public class Particles1132
     						  String controlP = (String)Main.getGift().get("PlayerInfo." + Username + ".OpenedGift.open");
     						  if (controlP == null)
     						  {
-    						   	  ((CraftPlayer) p).spawnParticle(Particle.VILLAGER_HAPPY, loc, QT, OX, OY, OZ);
+    						   	  ((CraftPlayer) p).spawnParticle(Particle.valueOf(Main.getParticle()), loc, QT, OX, OY, OZ);
     							  
     						  }
     						  else
@@ -71,7 +71,7 @@ public class Particles1132
     									  test++;
     								  }
     								  if (test == openedgiftt) {
-    									  ((CraftPlayer) p).spawnParticle(Particle.VILLAGER_HAPPY, loc, QT, OX, OY, OZ);
+    									  ((CraftPlayer) p).spawnParticle(Particle.valueOf(Main.getParticle()), loc, QT, OX, OY, OZ);
     								  }
     								  openedgift--;
     							  }
