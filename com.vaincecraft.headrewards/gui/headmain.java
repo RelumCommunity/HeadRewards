@@ -42,6 +42,8 @@ public class headmain {
 		int subid18 = rand.nextInt(7);
 		int subid19 = rand.nextInt(7);
 		int subid20 = rand.nextInt(7);
+		int subid21 = rand.nextInt(7);
+		int subid22 = rand.nextInt(7);
 		
 		ItemStack vetro1 = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short) subid1);
 		ItemStack vetro2 = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short) subid2);
@@ -63,9 +65,11 @@ public class headmain {
 		ItemStack vetro18 = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short) subid18);
 		ItemStack vetro19 = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short) subid19);
 		ItemStack vetro20 = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short) subid20);
+		ItemStack vetro21 = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short) subid21);
+		ItemStack vetro22 = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short) subid22);
 		
 		String mainmenu =  Main.getLangFile().getString("Gui.main_menu");
-		Inventory inv = Bukkit.createInventory(null, 27, mainmenu);
+		Inventory inv = Bukkit.createInventory(null, 36, mainmenu);
 		
 		inv.setItem(0, vetro1);
 		inv.setItem(1, vetro2);
@@ -79,19 +83,22 @@ public class headmain {
 		inv.setItem(9, vetro10);
 		inv.setItem(17, vetro11);
 		inv.setItem(18, vetro12);
-		inv.setItem(19, vetro13);
-		inv.setItem(20, vetro14);
-		inv.setItem(21, vetro15);
-		inv.setItem(22, vetro16);
-		inv.setItem(23, vetro17);
-		inv.setItem(24, vetro18);
-		inv.setItem(25, vetro19);
-		inv.setItem(26, vetro20);
+		inv.setItem(26, vetro13);
+		inv.setItem(27, vetro14);
+		inv.setItem(28, vetro15);
+		inv.setItem(29, vetro16);
+		inv.setItem(30, vetro17);
+		inv.setItem(31, vetro18);
+		inv.setItem(32, vetro19);
+		inv.setItem(33, vetro20);
+		inv.setItem(34, vetro21);
+		inv.setItem(35, vetro22);
 		
 		inv.setItem(10, Command.gethead("testaguieaster"));
 		inv.setItem(12, Command.gethead("testaguisummer"));
 		inv.setItem(14, Command.gethead("testaguihalloween"));
 		inv.setItem(16, Command.gethead("testaguichristmas"));
+		inv.setItem(22, Command.gethead("testaguimobegg"));
 		this.p.openInventory(inv);
 	}
 }
