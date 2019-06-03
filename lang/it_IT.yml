@@ -7,11 +7,13 @@ Messages:
   - '&b/hr head summer - Da 1 a 27'
   - '&b/hr head halloween - Da 1 a 34'
   - '&b/hr head christmas - Da 1 a 41'
+  - '&b/hr head mobegg - Da 1 a 57'
   - '&b/hrg - Apri la GUI'
   - '&b/hrg easter - Apri la GUI Pasquale'
   - '&b/hrg summer - Apri la GUI Estiva'
   - '&b/hrg halloween - Apri la GUI di Halloween'
   - '&b/hrg christmas - Apri la GUI Natalizia'
+  - '&b/hrg mobegg - Apri la GUI dei Mob'
   - '&b/hrl - Ricarica il plugin'
   - '&b/pr - Abilita le particelle (Non serve)'
   - '&7------------------------------------'
@@ -31,6 +33,8 @@ Messages:
   Place_Halloween: '&7[HeadRewards] &aTesta Piazzata!'
   #Il messaggio che il giocatore riceve se ha piazzato una testa Natalizia!
   Place_Christmas: '&7[HeadRewards] &aTesta Piazzata!'
+  #Il messaggio che il giocatore riceve se ha piazzato una testa di un mob!
+  Place_MobEgg: '&7[HeadRewards] &aTesta Piazzata!'
   #Il messaggio che il giocatore riceve se ha ricaricato il plugin!
   Plugin_Reload: '&7[HeadRewards] &cHeadRewards Ricaricato!'
   #Il messaggio che il giocatore riceve se non ha il giusto permesso!
@@ -53,6 +57,11 @@ Gui:
   christmas_page_1: 'Teste Natalizie 1'
   christmas_page_2: 'Teste Natalizie 2'
   christmas_page_3: 'Teste Natalizie 3'
+  mobegg_page_1: 'Teste Dei Mob 1'
+  mobegg_page_2: 'Teste Dei Mob 2'
+  mobegg_page_3: 'Teste Dei Mob 3'
+  mobegg_page_4: 'Teste Dei Mob 4'
+  mobegg_page_5: 'Teste Dei Mob 5'
   #Modifica le cose inerenti alle teste delle GUI
   Heads:
     #Teste della navigazione
@@ -70,6 +79,8 @@ Gui:
     halloween_lore: '&5Teste Di Halloween'
     christmas_name: '&cNATALE'
     christmas_lore: '&5Teste Natalizie'
+    mobegg_name: '&cUOVAMOB'
+    mobegg_lore: '&5Teste Uova Dei Mob'
     #Nomi/Descrizioni delle teste
     #Pasqua
     easter_head_name: '&cPASQUA'
@@ -83,3 +94,6 @@ Gui:
     #Natale
     christmas_head_name: '&cNATALE'
     christmas_head_lore: '&5Natale'
+    #UovaMob
+    mobegg_head_name: '&cUOVAMOB'
+    mobegg_head_lore: '&5UovaMob'
