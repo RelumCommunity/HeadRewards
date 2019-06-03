@@ -14,7 +14,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 
 public class LanguageFile
 {
-  private static final String[] LANG_FILES = { "en_US", "it_IT" };
+  private static final String[] LANG_FILES = { "en_US", "it_IT", "es_ES" };
   private final String FILE_NAME = Main.getInstance().getConfig().getString("Language") + ".yml";
   private FileConfiguration lang;
   private File langFile;
