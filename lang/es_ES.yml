@@ -1,0 +1,99 @@
+Messages:
+  #Lista de comandos que aparecerá cuando se ejecute / hr! (Si desaparece '' solo agrégalos si quieres agregar colores)
+  Help:
+  - '&7-------------&6Command list!&7-------------'
+  - '&b/hr - Recibe este mensaje'
+  - '&b/hr head easter - Del 1 al 23'
+  - '&b/hr head summer - Del 1 al 27'
+  - '&b/hr head halloween - Del 1 al 34'
+  - '&b/hr head christmas - Del 1 al 41'
+  - '&b/hr head mobegg - Del 1 al 57'
+  - '&b/hrg - Abrir gui'
+  - '&b/hrg easter - Abrir GUI de pascua'
+  - '&b/hrg summer - Abrir GUI de verano'
+  - '&b/hrg halloween - Abrir GUI de halloween'
+  - '&b/hrg christmas - Abrir GUI de navidad'
+  - '&b/hrg mobegg - Abrir GUI de huevos de mobs'
+  - '&b/hrl - Recargar plugin'
+  - '&b/pr - Colocar partículas (No es necesario)'
+  - '&7------------------------------------'
+  #¡Mensaje que recibirá ese jugador si ya ha abierto una caja!
+  Already_Opened: '&7[HeadRewards] &cYa has abierto esta caja.!'
+  #¡Mensaje que recibirá el jugador si ha abierto solo una caja!
+  Opened_One: '&7[HeadRewards] &cHas abierto %yourbox% caja de %totalbox% cajas!'
+  #¡Mensaje que recibirá el jugador si ha abierto más de una caja!
+  Opened_More: '&7[HeadRewards] &cHas abierto %yourbox% cajas de %totalbox% cajas!'
+  #¡Mensaje que recibirá ese jugador si se rompe la cabeza!
+  Break: '&7[HeadRewards] &cCABEZA REMOVIDA!'
+  #¡Mensaje que recibirá el jugador si coloca una cabeza de pascua!
+  Place_Easter: '&7[HeadRewards] &aCabeza colocada!'
+  #¡Mensaje que recibirá el jugador si coloca una cabeza de verano!
+  Place_Summer: '&7[HeadRewards] &aCabeza colocada!'
+  #¡Mensaje que recibirá el jugador si coloca una cabeza de halloween!
+  Place_Halloween: '&7[HeadRewards] &aCabeza colocada!'
+  #¡Mensaje que recibirá el jugador si coloca una cabeza de navidad!
+  Place_Christmas: '&7[HeadRewards] &aCabeza colocada!'
+  #¡Mensaje que recibirá ese jugador si coloca una cabeza de huevo de mob!
+  Place_MobEgg: '&7[HeadRewards] &a Cabeza Colocada!'
+  #¡Mensaje que recibirá ese jugador si carga el plugin!
+  Plugin_Reload: '&7[HeadRewards] &cHeadRewards recargado!'
+  #¡Mensaje que recibirá el jugador si no tiene los permisos adecuados!
+  No_Permission: '&7[HeadRewards] &cNo tienes permiso!'
+  #¡Mensaje que recibirá el jugador si recargan partículas. ADVERTENCIA: este
+  #comando ya no es necesario porque se inicia automáticamente cuando el complemento
+  #ha sido habilitado o recargado. ¡Úsalo solo si es NECESARIO!
+  Particles: '&7[HeadRewards] &aPartículas Activadas!'
+#Modifica cosas de gui
+Gui:
+  #Nombres de menú (sin '' no desaparece si no tiene color, simplemente agréguelos si desea agregar colores)
+  main_menu: 'Menu de Cabezas'
+  easter_page_1: 'Cabezas de Pascua 1'
+  easter_page_2: 'Cabezas de Pascua 2'
+  summer_page_1: 'Cabezas de Verano 1'
+  summer_page_2: 'Cabezas de Verano 2'
+  halloween_page_1: 'Cabezas de Halloween 1'
+  halloween_page_2: 'Cabezas de Halloween 2'
+  halloween_page_3: 'Cabezas de Halloween 3'
+  christmas_page_1: 'Cabezas de Navidad 1'
+  christmas_page_2: 'Cabezas de Navidad 2'
+  christmas_page_3: 'Cabezas de Navidad 3'
+  mobegg_page_1: 'Cabezas de Huevo de Mob 1'
+  mobegg_page_2: 'Cabezas de Huevo de Mob 2'
+  mobegg_page_3: 'Cabezas de Huevo de Mob 3'
+  mobegg_page_4: 'Cabezas de Huevo de Mob 4'
+  mobegg_page_5: 'Cabezas de Huevo de Mob 5'
+  #Modificar gui cabezas cosas
+  Heads:
+    #Cabezas de navegacion
+    main_menu_name: '&cMenú principal'
+    main_menu_lore: '&6Volver al menú principal.'
+    next_page_name: '&cSiguiente página'
+    next_page_lore: '&6Ir a la siguiente página'
+    previous_page_name: '&cPagina anterior'
+    previous_page_lore: '&6Ir a la página anterior'
+    easter_name: '&cPascua'
+    easter_lore: '&5Cabezas de Pascua'
+    summer_name: '&cVERANO'
+    summer_lore: '&5Cabezas de Verano'
+    halloween_name: '&cHALLOWEEN'
+    halloween_lore: '&5Cabezas de Halloween'
+    christmas_name: '&cNAVIDAD'
+    christmas_lore: '&5Cabezas de Navidad'
+    mobegg_name: '&cHUEVODEMOB'
+    mobegg_lore: '&5Cabezas de huevo de mobs'
+    #Nombre/Lores de cabaezas
+    #Pascua
+    easter_head_name: '&cPASCUA'
+    easter_head_lore: '&5Pascua'
+    #Verano
+    summer_head_name: '&cVERANO'
+    summer_head_lore: '&5Verano'
+    #Halloween
+    halloween_head_name: '&cHALLOWEEN'
+    halloween_head_lore: '&5Halloween'
+    #Navidad
+    christmas_head_name: '&cNAVIDAD'
+    christmas_head_lore: '&5Navidad'
+    #MobEgg
+    mobegg_head_name: '&cHUEVODEMOB'
+    mobegg_head_lore: '&5HuevoDeMob'
