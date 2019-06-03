@@ -95,7 +95,7 @@ public class HEvent implements Listener {
     }
 	
 	//Christmas
-	String headchristmasname =  Main.getLangFile().getString("Gui.Heads.christma_head_sname");
+	String headchristmasname =  Main.getLangFile().getString("Gui.Heads.christmas_head_name");
 	String christmascolormsg1 = headchristmasname.replaceAll("&", "§");
     if (e.getItemInHand().getItemMeta().getDisplayName().equalsIgnoreCase(christmascolormsg1))
     {
@@ -111,12 +111,35 @@ public class HEvent implements Listener {
         }
         else
         {
+        	e.setCancelled(true);
         	String getmsg = Main.getLangFile().getString("Messages.No_Permission");
         	String colormsg = getmsg.replaceAll("&", "§");
-        	 e.setCancelled(true);
-        	 e.getPlayer().sendMessage(colormsg);
+        	e.getPlayer().sendMessage(colormsg);
         }
     }
+    //MobEgg
+  	String headmobeggname =  Main.getLangFile().getString("Gui.Heads.mobegg_head_name");
+  	String mobeggcolormsg1 = headmobeggname.replaceAll("&", "§");
+      if (e.getItemInHand().getItemMeta().getDisplayName().equalsIgnoreCase(mobeggcolormsg1))
+      {
+          if (e.getPlayer().hasPermission("headrewards.place.mobegg"))
+          { //Permesso piazza blocco
+          	String getmsg = Main.getLangFile().getString("Messages.Place_MobEgg");
+            String colormsg = getmsg.replaceAll("&", "§");
+            e.getPlayer().sendMessage(colormsg);
+            int X = e.getBlockPlaced().getLocation().getBlockX();
+            int Y = e.getBlockPlaced().getLocation().getBlockY();
+            int Z = e.getBlockPlaced().getLocation().getBlockZ();
+            giftboxyml.Update(X, Y, Z, null, false, 0, 0, "");
+          }
+          else
+          {
+        	  e.setCancelled(true);
+        	  String getmsg = Main.getLangFile().getString("Messages.No_Permission");
+        	  String colormsg = getmsg.replaceAll("&", "§");
+        	  e.getPlayer().sendMessage(colormsg);
+          }
+      }
     
     //Special
     String mainmenuname =  Main.getLangFile().getString("Gui.Heads.main_menu_name");
@@ -133,7 +156,9 @@ public class HEvent implements Listener {
 	String colormsg6 = halloweenname.replaceAll("&", "§");
 	String christmasname =  Main.getLangFile().getString("Gui.Heads.christmas_name");
 	String colormsg7 = christmasname.replaceAll("&", "§");
-    if (e.getItemInHand().getItemMeta().getDisplayName().equalsIgnoreCase(colormsg1) || e.getItemInHand().getItemMeta().getDisplayName().equalsIgnoreCase(colormsg2) || e.getItemInHand().getItemMeta().getDisplayName().equalsIgnoreCase(colormsg3) || e.getItemInHand().getItemMeta().getDisplayName().equalsIgnoreCase(colormsg4) || e.getItemInHand().getItemMeta().getDisplayName().equalsIgnoreCase(colormsg5) || e.getItemInHand().getItemMeta().getDisplayName().equalsIgnoreCase(colormsg6) || e.getItemInHand().getItemMeta().getDisplayName().equalsIgnoreCase(colormsg7))
+	String mobeggname = Main.getLangFile().getString("Gui.Heads.mobegg_name");
+	String colormsg8 = mobeggname.replaceAll("&", "§");
+    if (e.getItemInHand().getItemMeta().getDisplayName().equalsIgnoreCase(colormsg1) || e.getItemInHand().getItemMeta().getDisplayName().equalsIgnoreCase(colormsg2) || e.getItemInHand().getItemMeta().getDisplayName().equalsIgnoreCase(colormsg3) || e.getItemInHand().getItemMeta().getDisplayName().equalsIgnoreCase(colormsg4) || e.getItemInHand().getItemMeta().getDisplayName().equalsIgnoreCase(colormsg5) || e.getItemInHand().getItemMeta().getDisplayName().equalsIgnoreCase(colormsg6) || e.getItemInHand().getItemMeta().getDisplayName().equalsIgnoreCase(colormsg7) || e.getItemInHand().getItemMeta().getDisplayName().equalsIgnoreCase(colormsg8))
     {
     	if(e.getPlayer().isOp()) {
     		
