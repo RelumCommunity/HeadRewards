@@ -32,7 +32,7 @@ public class Main
 
 	
   public static Main plugin;
-  public String pluginVersion = "1.8";
+  public String pluginVersion = "1.9";
   
   public void onEnable() {
 	  plugin = this;
@@ -46,7 +46,7 @@ public class Main
 	  }
 	  else plugin.getServer().getConsoleSender().sendMessage("[HeadRewards INFO] " + ChatColor.YELLOW + "HeadRewards using: " + Bukkit.getVersion() + ChatColor.RED + ("UNTESTED VERSION"));
 	  
-	  plugin.getServer().getConsoleSender().sendMessage("[HeadRewards] " + ChatColor.GREEN + "HeadRewards has been enabled (V.1.8)");
+	  plugin.getServer().getConsoleSender().sendMessage("[HeadRewards] " + ChatColor.GREEN + "HeadRewards has been enabled (V.1.9)");
 	  
 	  Bukkit.getPluginManager().registerEvents(new GUIEvent(), this);
 	  Bukkit.getPluginManager().registerEvents(new HEvent(), this);
@@ -156,7 +156,7 @@ public class Main
   }
   
   public void onDisable() {
-	  plugin.getServer().getConsoleSender().sendMessage("[HeadRewards] " + ChatColor.RED + "HeadRewards has been disabled (V.1.8)");
+	  plugin.getServer().getConsoleSender().sendMessage("[HeadRewards] " + ChatColor.RED + "HeadRewards has been disabled (V.1.9)");
   
   }
   
@@ -186,6 +186,10 @@ public class Main
   public static String getLang() {
 	  String Lang = Main.getInstance().getConfig().getString("Language");
 	  return Lang;
+  }
+  public static String getParticle() {
+	  String Particle = Main.getInstance().getConfig().getString("Particle");
+	  return Particle;
   }
   
 }
