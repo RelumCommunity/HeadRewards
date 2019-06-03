@@ -87,8 +87,7 @@ public class Particles188
   
   public static PacketPlayOutWorldParticles CreatePacket(float X, float Y, float Z, float OX, float OY, float OZ, float V, int QT)
   {
-    PacketPlayOutWorldParticles CPacket = new PacketPlayOutWorldParticles(EnumParticle.VILLAGER_HAPPY, true, X, Y, Z, OX, OY, OZ, V, QT);
-    
+    PacketPlayOutWorldParticles CPacket = new PacketPlayOutWorldParticles(EnumParticle.valueOf(Main.getParticle()), true, X, Y, Z, OX, OY, OZ, V, QT);
     return CPacket;
   }
 }
