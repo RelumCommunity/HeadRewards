@@ -90,7 +90,7 @@ public class Command
 	for(Heads head : Heads.values()) {
 		if(head.getName().equals(name)) {
 			return head.getItemStack();
-		}else if(a == 131){
+		}else if(a == 189){
 			return head.ErrorItem();
 		}else {
 			a = a + 1;
@@ -127,6 +127,7 @@ public class Command
     int contosummer = 0;
     int contohalloween = 0;
 	int contochristmas = 0;
+	int contomobegg = 0;
 	
 	//Easter
 	String headeastername =  Main.getLangFile().getString("Gui.Heads.easter_head_name");
@@ -207,6 +208,25 @@ public class Command
 			break;
 		}
 	}
+	//MobEgg
+	String headmobeggname =  Main.getLangFile().getString("Gui.Heads.mobegg_head_name");
+	String mobeggcolormsg1 = headmobeggname.replaceAll("&", "§");
+	String headmobegglore =  Main.getLangFile().getString("Gui.Heads.mobegg_head_lore");
+	String mobeggcolormsg2 = headmobegglore.replaceAll("&", "§");
+	while(true) {
+		contomobegg++;
+			
+		if (name.equalsIgnoreCase("mobegg" + contomobegg)) {
+			customlore.clear();
+			customlore.add(mobeggcolormsg2 + " " + contomobegg);
+			headmeta.setDisplayName(mobeggcolormsg1);
+			break;
+		}
+			
+		if (contomobegg == 57) {
+			break;
+		}
+	}
     
     //Special
 	String mainmenuname =  Main.getLangFile().getString("Gui.Heads.main_menu_name");
@@ -237,6 +257,10 @@ public class Command
 	String colormsg13 = christmasname.replaceAll("&", "§");
 	String christmaslore =  Main.getLangFile().getString("Gui.Heads.christmas_lore");
 	String colormsg14 = christmaslore.replaceAll("&", "§");
+	String mobeggname = Main.getLangFile().getString("Gui.Heads.mobegg_name");
+	String colormsg15 = mobeggname.replaceAll("&", "§");
+	String mobegglore = Main.getLangFile().getString("Gui.Heads.mobegg_lore");
+	String colormsg16 = mobegglore.replaceAll("&", "§");
     if (name.equalsIgnoreCase("testaguiback")) {
     	customlore.clear();
     	customlore.add(colormsg2);
@@ -271,6 +295,11 @@ public class Command
     	customlore.clear();
     	customlore.add(colormsg14);
     	headmeta.setDisplayName(colormsg13);
+    }
+    else if (name.equalsIgnoreCase("testaguimobegg")) {
+    	customlore.clear();
+    	customlore.add(colormsg16);
+    	headmeta.setDisplayName(colormsg15);
     }
     headmeta.setLore(customlore);
     head.setItemMeta(headmeta);
