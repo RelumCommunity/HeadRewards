@@ -9,6 +9,7 @@ import com.vaincecraft.headrewards.gui.christmas;
 import com.vaincecraft.headrewards.gui.easter;
 import com.vaincecraft.headrewards.gui.halloween;
 import com.vaincecraft.headrewards.gui.headmain;
+import com.vaincecraft.headrewards.gui.mobegg;
 import com.vaincecraft.headrewards.gui.summer;
 import com.vaincecraft.headrewards.main.Main;
 
@@ -86,6 +87,21 @@ public class GUICommand implements CommandExecutor {
 	        		{
 	        			Player p = (Player) sender;
 	        			christmas gui = new christmas(p);
+	        			gui.open();
+	        		}
+	        		else
+	            	{
+	            		String getmsg = Main.getLangFile().getString("Messages.No_Permission");
+	                	String colormsg = getmsg.replaceAll("&", "§");
+	                    sender.sendMessage(colormsg); 
+	            	}
+	        	}
+	        	else if (args[0].equalsIgnoreCase("mobegg"))
+	        	{
+	        		if (sender.hasPermission("headrewards.gui"))
+	        		{
+	        			Player p = (Player) sender;
+	        			mobegg gui = new mobegg(p);
 	        			gui.open();
 	        		}
 	        		else
