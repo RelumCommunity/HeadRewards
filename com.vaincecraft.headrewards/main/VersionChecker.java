@@ -16,7 +16,7 @@ import net.md_5.bungee.api.ChatColor;
 
 public class VersionChecker implements Listener{
 	
-	public String pluginVersion = "1.8 [1.8-1.13.2 NO 1.9]";
+	public String pluginVersion = "1.9 [1.8-1.13.2 NO 1.9]";
 	
 	public VersionChecker()
 	  {
