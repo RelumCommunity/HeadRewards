@@ -1,6 +1,6 @@
 name: HeadRewards
 main: com.vaincecraft.headrewards.main.Main
-version: 1.7
+version: 1.8
 authors: [LuigiPro14, nato3623]
 description: Right-Click on a particular PlayerHead to recive a custom reward! 1.8-1.13.2 (NO 1.9)
 commands:
